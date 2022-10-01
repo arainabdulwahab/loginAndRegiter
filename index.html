@@ -11,25 +11,27 @@
 <body>
     <div class="login" id="login">
         <form action="">
+            <div id="errorMsg"></div>
             <label for="gmail">Gmail:</label>
-            <input type="text" id="gmail" name="gmail"  placeholder="write an email"required>
+            <input type="text" id="gmail" name="gmail" placeholder="write an email" required>
             <br>
             <label for="passowrd">Password:</label>
             <input type="password" id="password" name="password" placeholder="password" required>
             <button id="submit" type="button" onclick="getUserInfo()">Submit</button>
+            <h3></h3>
         </form>
-    </div>   
+    </div>
     <div class="register" id="register">
         <form action="">
             <label for="gmailRegister">Gmail:</label>
-            <input type="text" id="gmailRegister" name="gmailRegister"  placeholder="write an email"required>
+            <input type="text" id="gmailRegister" name="gmailRegister" placeholder="write an email" required>
             <br>
             <label for="passwordRegister">Password:</label>
             <input type="password" id="passwordRegister" name="passwordRegister" placeholder="password" required>
             <br>
             <label for="passowrd">Password:</label>
             <input type="password" id="passwordRegister2" name="passwordRegister2" placeholder="password" required>
-            <button id="Submit2" type="button" >Submit</button>
+            <button id="Submit2" type="button">Submit</button>
         </form>
     </div>
     <script src="style.js"></script>

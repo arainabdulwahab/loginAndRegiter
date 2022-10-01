@@ -1,9 +1,11 @@
 let forms = [
     {
+        user: "testOne",
         gmail: "antoniolupin@gmail.com",
         password: "hacunamatat"
     },
     {
+        user: "testTwo",
         gmail: "carlofesta@gmail.com",
         password: "pastaConSuggo"
     }
@@ -25,4 +27,18 @@ function getUserInfo() {
     console.log(errorMsg);
     document.getElementById('errorMsg').innerHTML = errorMsg;
 
+}
+
+function addUser(){
+    let userName = document.getElementById('userName').value;
+    let gmail = document.getElementById('gmailRegister').value;
+    let password = document.getElementById('passwordRegister').value;
+    let password2 = document.getElementById('passwordRegister2').value;
+    if(password == password2){
+        forms.push({user: '"'+ userName +'"', gmail:'"'+ gmail +'"', password: '"'+ password +'"'});
+        console.log("user added" + userName + gmail + password);
+        window.location.href = "welcome.html";
+    }else{
+        document.getElementById('errorMsg2').innerHTML = 'password didnt match or email correct'; 
+    }
 }

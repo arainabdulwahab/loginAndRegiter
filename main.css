@@ -1,0 +1,13 @@
+.login, .register{
+    padding: 20px;
+    margin: 20px;
+}
+#errorMsg , #errorMsg2{
+    display: none;
+    background-color: rgb(210, 89, 89);
+    color:white;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 10px;
+    margin-bottom: 10px;
+}

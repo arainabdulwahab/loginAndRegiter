@@ -31,11 +31,11 @@ function getUserInfo() {
 function addUser(){
     let userName = document.getElementById('userName').value;
     let gmail = document.getElementById('gmailRegister').value;
-    let passwords = document.getElementById('passwordRegister').value;
+    let password = document.getElementById('passwordRegister').value;
     let password2 = document.getElementById('passwordRegister2').value;
     if(password == password2){
-        forms.push({user: '"'+ userName +'"', gmail:'"'+ gmail +'"', password: '"'+ passwords +'"'});
-        console.log("user added" + userName + gmail + passwords);
+        forms.push({user: '"'+ userName +'"', gmail:'"'+ gmail +'"', password: '"'+ password +'"'});
+        console.log("user added" + userName + gmail + password);
         window.location.href = "welcome.html";
     }else{
         document.getElementById('errorMsg2').style.display = 'block';

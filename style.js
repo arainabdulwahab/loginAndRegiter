@@ -1,10 +1,10 @@
 let forms = [
     {
-        email: "antoniolupin@gmail.com",
+        gmail: "antoniolupin@gmail.com",
         password: "hacunamatat"
     },
     {
-        email: "carlofesta@gmail.com",
+        gmail: "carlofesta@gmail.com",
         password: "pastaConSuggo"
     }
 ];
@@ -14,4 +14,10 @@ let paswords = '';
 function getUserInfo(){
     let gmail = document.getElementById("gmail").value;
     let password = document.getElementById("password").value;
+    for(let i = 0; i < forms.length; i++){
+        if(gmail == forms[i].gmail && password == forms[i].password){
+            console.log(forms[i].gmail + 'logged in!!');
+            window.location.href = "welcome.html";
+        }
+    }
 }
